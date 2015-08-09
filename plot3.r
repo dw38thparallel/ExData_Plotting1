@@ -12,8 +12,7 @@ powercons_sub$datetime <- strptime(powercons_sub$datetime,"%d/%m/%Y %H:%M:%S")
 with(powercons_sub,plot(datetime,Sub_metering_1,type="l",xlab="",ylab="Energy sub metering"))
 with(powercons_sub,lines(datetime,Sub_metering_2,type="l",xlab="",ylab="Energy sub metering",col="red"))
 with(powercons_sub,lines(datetime,Sub_metering_3,type="l",xlab="",ylab="Energy sub metering",col="blue"))
-legend('topright',legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty=1,col=c("black","red","blue"))
-
+legend('topright',legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty=1,col=c("black","red","blue"),cex=1,text.width=55000)
 dev.copy(png,filename="plot3.png")
 dev.off()
 }

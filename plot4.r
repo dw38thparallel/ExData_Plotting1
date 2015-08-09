@@ -16,7 +16,7 @@ with(powercons_sub,plot(datetime,Voltage,type="l",xlab="datetime",ylab="Voltage"
 with(powercons_sub,plot(datetime,Sub_metering_1,type="l",xlab="",ylab="Energy sub metering"))
 with(powercons_sub,lines(datetime,Sub_metering_2,type="l",xlab="",ylab="Energy sub metering",col="red"))
 with(powercons_sub,lines(datetime,Sub_metering_3,type="l",xlab="",ylab="Energy sub metering",col="blue"))
-legend('topright',legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),bty="n",lty=1,col=c("black","red","blue"))
+legend('topright',legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),bty="n",lty=1,col=c("black","red","blue"),cex=0.75,text.width=85000)
 with(powercons_sub,plot(datetime,Global_reactive_power,type="h",xlab="datetime",ylab="Global_reactive_power",col="black")) 
 
 dev.copy(png,filename="plot4.png")
